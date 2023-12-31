@@ -19,15 +19,15 @@ async function scrapeWebsite() {
       tableData.push(rowData);
     });
 
-    // return tableData; 
-    console.log(tableData); // Display new data in the console
+    return tableData; 
+    // console.log(tableData); // Display new data in the console
   } catch (error) {
     console.error('Error while scraping website:', error);
     throw error;
   }
 }
 
-scrapeWebsite()
+// scrapeWebsite()
 
 // Function to export data to Excel
 function exportToExcel(data) {
